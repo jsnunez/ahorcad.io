@@ -1,0 +1,49 @@
+function ingresar(){
+    const operando1 = (document.getElementById("operando1").value);
+
+
+    var objeto=
+    {
+     palabraOculta:operando1.split(''),
+ letrasAdivinadas:operando1.split('').fill("_"),
+ intenstosRestantes:6,
+ letrasIncorrectas:[]
+    }
+    document.getElementById("resultado").innerHTML = objeto.letrasAdivinadas;
+
+    console.log(objeto);
+    return objeto
+
+
+}
+const adivinarLetra = function () {
+
+}
+function ingresar(objeto){
+    if (p==1){
+    var objeto=inicializarJuego();
+    var palabra=objeto.palabraOculta;
+var padivinada=objeto.letrasAdivinadas;
+p++
+console.log(p)
+}
+let operando2 = (document.getElementById("operando2").value);
+console.log(palabra)
+
+while(palabra.indexOf(operando2)>=0){
+
+    palabra.splice(palabra.indexOf(operando2),1,"_")
+    padivinada[palabra.indexOf(operando2)+1]=operando2
+    console.log(palabra)
+    console.log(padivinada)
+
+}
+
+ return(palabra,padivinada)
+
+
+
+
+
+
+}

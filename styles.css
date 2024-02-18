@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+    padding: 20px;
+   
+ }
+ .bot{
+   color: white;
+ }
+ .calculadora{
+    max-width: 400px;
+    margin: auto;
+    background-color: #211951;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #15F5BA;
+ }
+ button{
+   background-color: #15F5BA;
+ }
+ #listado{
+   overflow-x: hidden; /* Hide horizontal scrollbar */
+   overflow-y: scroll; /* Add vertical scrollbar */
+   max-width: 200px;
+}
