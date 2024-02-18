@@ -69,9 +69,12 @@ console.log(padivinada)
 if(palabra.indexOf(operando2)==-1){
     objeto.intenstosRestantes=objeto.intenstosRestantes-1
     console.log("menos uno")
+
     if( objeto.intenstosRestantes==0){
-        alert("el juego termino")
+
         document.getElementById('adivinar').style.display = 'none';
+
+        alert("el juego termino")
     }
     
 }
@@ -90,7 +93,7 @@ while(palabra.indexOf(operando2)>=0){
 
 
 document.getElementById("resultado").innerHTML = objeto.letrasAdivinadas;
-
+document.getElementById("imagen").src = "/fotos/" +String(objeto.intenstosRestantes)+".png";
 document.getElementById("intentos").innerHTML = objeto.intenstosRestantes;
 
 return(padivinada,intentos)
