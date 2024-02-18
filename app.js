@@ -93,7 +93,7 @@ while(palabra.indexOf(operando2)>=0){
 
 
 document.getElementById("resultado").innerHTML = objeto.letrasAdivinadas;
-document.getElementById("imagen").src = "/fotos/" +String(objeto.intenstosRestantes)+".png";
+document.getElementById("imagen").src = String(objeto.intenstosRestantes)+".png";
 document.getElementById("intentos").innerHTML = objeto.intenstosRestantes;
 
 return(padivinada,intentos)
